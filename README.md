@@ -10,7 +10,7 @@ const redis = new Redis({
 })
 ```
 
-for build the image you can use bellow command, but remember that if you change the bellow command for **image name**, you shoud change docker-compose.yaml file for name of redis proxy:
+For build the image you can use bellow command, but remember that if you change the bellow command for **image name**, you shoud change docker-compose.yaml file for name of redis proxy:
 ```bash
 cd redis_proxy
 docker build -t redis-proxy .
@@ -24,22 +24,22 @@ everything is fine and you can run docker compose:
 docker compose up -d
 ```
 
-## install r1ec CLI and deploy our project
+## Install r1ec CLI and deploy our project
 We use r1ec CLI for deploy our code. for first we need to install the r1ec CLI:
 ```bash
 npm install -g r1ec
 ```
 
-after install we should **login** with our API key:
+After install we should **login** with our API key:
 ```bash
 r1ec login
 ```
 
-after login we can deploy our project in our account:
+After login we can deploy our project in our account:
 ```bash
 r1ec deploy <name> -f index.js
 ```
 
-this file is the main code which we want to run on the edge's.
+This file is the main code which we want to run on the edge's.
 
 
