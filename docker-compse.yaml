@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  redis-proxy:
+    image: redis-proxy
+    container_name: redis-http-proxy
+    ports:
+      - "3000:3000"
